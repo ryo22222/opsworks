@@ -1,0 +1,32 @@
+---
+  stack:
+    stack_name: "rails_application_stack"
+    layers:
+      -
+        layer_name: "web-server"
+        deploy_layer_name: "deploy-server"
+        app_name: "web_application"
+        ruby:
+          versions:
+            -
+              version: "2.3.0"
+              global: "true"
+      -
+        layer_name: "cms-server"
+        deploy_layer_name: "deploy-server"
+        app_name: "api_application"
+        nginx:
+          cors: true
+        ruby:
+          versions:
+            -
+              version: "2.3.0"
+              global: "true"
+        imagemagick: true
+      -
+        layer_name: "deploy-server"
+        ruby:
+          versions:
+            -
+              version: "2.3.0"
+              global: "true"

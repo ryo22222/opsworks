@@ -1,0 +1,7 @@
+source 'https://supermarket.chef.io'
+cookbook 'yum-epel'
+cookbook 'ruby_build'
+cookbook 'rbenv'
+cookbook 'ruby'
+cookbook 'nginx'
+cookbook 'mysql', '~> 5.3.6'
