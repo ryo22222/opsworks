@@ -1,13 +1,20 @@
 source 'https://supermarket.chef.io'
 
 # Berkshelf Cookbooks
-cookbook 'yum-epel',          path: "./berks_cookbooks/cookbooks/yum-epel"
-cookbook 'ruby_build',        path: "./berks_cookbooks/cookbooks/ruby_build"
-cookbook 'mysql',             path: "./berks_cookbooks/cookbooks/mysql"
-cookbook 'nginx',             path: "./berks_cookbooks/cookbooks/nginx"
+cookbook 'yum-epel'
+cookbook 'ruby_build'
+cookbook 'mysql'
+cookbook 'nginx'
+cookbook 'puma'
+
+# cookbook 'yum-epel',          path: "./berks_cookbooks/cookbooks/yum-epel"
+# cookbook 'ruby_build',        path: "./berks_cookbooks/cookbooks/ruby_build"
+# cookbook 'mysql',             path: "./berks_cookbooks/cookbooks/mysql"
+# cookbook 'nginx',             path: "./berks_cookbooks/cookbooks/nginx"
+# cookbook 'puma'
 
 # Custome Cookbooks
-# cookbook 'time-zone',         path: "./custom_cookbooks/time-zone"
+# cookbook 'time-zone',         path: "git@github.com:ryo22222/aws-cookbooks.git", rel: 'timezone'
 # cookbook 'rbenv',             path: "./custom_cookbooks/rbenv"
 # cookbook 'ruby',              path: "./custom_cookbooks/ruby"
 # cookbook 'setup',             path: "./custom_cookbooks/setup"
